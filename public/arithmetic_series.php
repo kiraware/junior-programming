@@ -17,14 +17,16 @@
     </form>
     <?php
         function f1($n) {
+            // O(n)
             $tot = 0;
             for ($x = 1; $x <= $n; $x++) {
-            $tot += $x;
+                $tot += $x;
             }
             return $tot;
         }
-
+        
         function f2($n) {
+            // O(1)
             return $n/2 * (2 + ($n-1));
         }
 
