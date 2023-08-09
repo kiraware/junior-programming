@@ -1,7 +1,7 @@
 version: 1.0
 runtime: php81
 build:
-  command:
+  commands:
     build:
       - chmod +x startup.sh
 run:
