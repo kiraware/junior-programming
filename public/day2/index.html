@@ -1,143 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Cakrawangsa Praba Alkautsar" />
+        <meta
+        name="description"
+        content="The Portfolio Website by Cakrawangsa Praba Alkautsar"
+        />
+        <title>Cakrawangsa Praba Alkautsar</title>
+        <script
+        src="https://kit.fontawesome.com/c8e4d183c2.js"
+        crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Cakrawangsa Praba Alkautsar">
-    <meta name="description" content="The Portfolio Website by Cakrawangsa Praba Alkautsar">
-    <title>Cakrawangsa Praba Alkautsar</title>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script> 
-</head>
-
-<body>
-    <section>
-        <!--- navigation --->
-        <nav class="w-full py-4 px-32 flex justify-between items-center shadow-lg">
-            <!--- logo --->
-            <a href="#" class="text-3xl font-medium text-black dark:text-slate-900">Portfolio Tutorial</a>
-            <!--- menu --->
-            <ul class="text-2xl font-medium text-black dark:text-slate-900 flex flex-row gap-6">
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimoni">Testimonials</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav class="bg-white border-gray-200 dark:bg-gray-900">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
+                    </a>
+                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#testimoni" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonials</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <!--- text --->
-        <div class="py-4 px-32 flex justify-between items-center">
+        <div class="px-4 py-4 sm:px-32 flex flex-col-reverse sm:flex-row justify-between items-center min-h-screen">
             <div class="font-medium text-black dark:text-slate-900">
                 <p class="text-3xl">Hello 👋,</p>
                 <p class="text-5xl">I&#8217;m Cakrawangsa Praba Alkautsar</p>
                 <p class="text-4xl">Pentester &amp; Fullstack Developer</p>
-                <p class="text-xl">A man who love to code, learn and
-                <br>contribute on open source.</p>
+                <p class="text-xl">
+                A man who love to code, learn and <br />contribute on open source.
+                </p>
                 <button class="text-2xl">Hire me</button>
                 <button class="text-2xl">Download CV</button>
             </div>
             <!-- model -->
-            <img alt="model" src="https://www.indotechpren.org/assets/img/avatar.png">  
+            <img
+                alt="model"
+                src="https://www.indotechpren.org/assets/img/avatar.png"
+            />
         </div>
-    </section>
 
-    <!-- services -->
-    <div id="services" class="font-medium dark:text-slate-900">
-        <!--text-->
-        <div>
-            <p class="text-4xl">Services</p>
-            <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
- 
-        <div>
-        <!--- 1 --->
-            <div>
-                <span>1</span>
-                <p class="text-4xl">Technical Writing</p>
-                <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                <button class="text-2xl">Read More</button>
+        <!-- services -->
+        <div id="services" class="flex flex-col gap-8 items-center min-h-screen px-4 sm:px-32 py-8 gap-4">
+            <!--text-->
+            <div class="text-center">
+                <p class="text-5xl font-bold">Services</p>
+                <p class="text-2xl font-medium">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only
+                five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+                </p>
             </div>
-        <!--- 2 --->
-            <div>
-                <span>2</span>
-                <p class="text-4xl">Pentesting</p>
-                <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                <button class="text-2xl">Read More</button>
-            </div>
-        <!--- 3 --->
-            <div>
-                <span>3</span>
-                <p class="text-4xl">Developer</p>
-                <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                <button class="text-2xl">Read More</button>
-            </div>
-        </div>
-    </div>
- 
-    <!--testimonials-->
-    <div id="testimoni">
-        <!--text-->
-        <div>
-            <p>What Our Client Says..</p>
-        </div>        
- 
-        <div>
-            <div>
-                <img src="https://www.indotechpren.org/assets/img/pkipm.png">
-                <div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <h3>Client Pertama</h3>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
+
+            <div class="flex flex-col sm:flex-row sm:flex-row gap-4">
+                <!--- 1 --->
+                <div class="flex flex-col items-center">
+                    <img src="img/technical_writer_526x543.png" alt="Technical Writing" class="w-64" />
+                    <p class="text-4xl font-semibold text-center">Technical Writing</p>
+                    <p class="text-xl font-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s.
+                    </p>
+                    <button class="text-lg">Read More</button>
                 </div>
-            </div>
- 
-            <div>
-                <img src="https://www.indotechpren.org/assets/img/unila.png">
-                <div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <h3>Client Kedua</h3>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
+                <!--- 2 --->
+                <div class="flex flex-col items-center">
+                    <img src="img/pentest_512x512.png" alt="Pentesting" class="w-64" />
+                    <p class="text-4xl font-semibold text-center">Pentesting</p>
+                    <p class="text-xl font-medium">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s.
+                    </p>
+                    <button class="text-lg">Read More</button>
+                </div>
+                <!--- 3 --->
+                <div class="flex flex-col items-center">
+                    <img src="img/developer_2400x2400.png" alt="Developer" class="w-64" />
+                    <p class="text-4xl font-semibold text-center">Developer</p>
+                    <p class="text-xl font-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s.
+                    </p>
+                    <button class="text-lg">Read More</button>
                 </div>
             </div>
         </div>
-    </div>
- 
-    <!-- footer -->
-    <footer>
-        <p>Interested In Using Our Services?</p>
- 
-        <!--paragraph-->
-        <p>I try to work on your project as quickly as possible. Guarantee for revision until you are satisfied with my work.</p>
-        <!--social-->
-        <div>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
-            <a href="#"><i></i></a>
+
+        <!--testimonials-->
+        <div id="testimoni" class="flex flex-col min-h-screen px-4 py-8 gap-4">
+            <!--text-->
+            <div>
+                <p class="text-5xl font-bold text-center">What Our Client Says..</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center px-4 sm:px-32 py-8 gap-4">
+                <div class="flex flex-col items-center">
+                    <img src="https://www.indotechpren.org/assets/img/pkipm.png" />
+                    <div>
+                        <p class="text-lg font-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s.
+                        </p>
+                        <h3 class="text-xl font-bold">Client Pertama</h3>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://www.indotechpren.org/assets/img/unila.png" />
+                    <div>
+                        <p class="text-lg font-medium">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s.
+                        </p>
+                        <h3 class="text-xl font-bold">Client Kedua</h3>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
         </div>
- 
-        <!--copyright-->
-        <p>Copyright by PT Indonesia Teknologi Preneur</p>
-    </footer>
- 
-    <!--social-attach-bar-->
-    <div>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-    </div>
-</body>
- 
+
+        <!-- footer -->
+        <footer class="bg-black text-white text-center p-4">
+            <p class="text-3xl font-semibold">Interested in using our service?</p>
+     
+            <!--paragraph-->
+            <p class="text-md font-medium">I try to provide the best quality in every project I create, especially the performance of the website.</p>
+            <!--social-->
+            <div class="flex gap-2 text-white items-center justify-center text-xl">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+     
+            <!--copyright-->
+            <p class="mt-4">&copy; PT Me.my</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    </body>
 </html>
