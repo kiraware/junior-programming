@@ -30,9 +30,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex flex-col items-center bg-gray-300 dark:bg-gray-900 py-2 sm:py-16 md:py-32 lg:py-64">
+<body class="flex flex-col items-center bg-gray-300 dark:bg-gray-900 py-1 sm:py-16 md:py-32 lg:py-64">
     <form method="post" class="flex flex-col items-center px-8 py-4 shadow-lg rounded-lg gap-4 bg-gray-400 dark:bg-gray-700">
-        <legend class="text-2xl font-bold text-white">User</legend>
+        <legend class="text-3xl font-bold text-white">User</legend>
         <fieldset class="flex flex-col gap-2">
             <p class="flex flex-col sm:flex-row gap-2 justify-between">
                 <label for="name" class="font-bold text-xl text-white">Name</label>
