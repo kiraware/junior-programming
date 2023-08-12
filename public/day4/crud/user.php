@@ -51,7 +51,7 @@
                 <input type="password" name="password" id="password" placeholder="your password" required class="text-base font-normal rounded-lg px-4 py-2">
             </p>
         </fieldset>
-        <button type="submit" name="submit" class="bg-teal-500 rounded-lg w-fit px-4 py-2 font-semibold text-base text-white">Submit</button>
+        <button type="submit" name="submit" class="bg-teal-500 rounded-lg w-fit px-8 py-2 font-semibold text-base text-white w-full sm:w-auto sm:self-end">Submit</button>
     </form>
 </body>
 
