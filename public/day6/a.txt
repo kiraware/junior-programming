@@ -1,0 +1,9 @@
+memasukkan nama
+memasukkan email (email)
+memasukkan nomor hp (number)
+semester saat ini (1-8 pake spinner)
+ipk dari sistem (otomatis muncul)
+klik registrasi beasiswa () ipk dibawah 3 gk bisa lanjut beasiswa
+ipk di atas 3, kursor otomatis di pilihan beasiswa
+upload jpg, pdf
+klik daftar, tampil tapi beda tampilan
