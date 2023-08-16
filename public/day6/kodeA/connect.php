@@ -4,9 +4,9 @@
      * HOST = 'localhost'
      * USER = 'root'
      * PASSWORD = ''
-     * DATABASE = 'crudoperation'
+     * DATABASE = 'kodea'
      * */
-    $con = new mysqli('localhost', 'root', '', 'crudoperation');
+    $con = new mysqli('localhost', 'root', '', 'kodea');
 
     // Checking connection
     if (!$con) {

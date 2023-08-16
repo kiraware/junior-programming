@@ -1,3 +1,7 @@
+<?php
+    require 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,23 +12,9 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="beasiswa.php">Pilihan Beasiswa</a>
-                </li>
-                <li>
-                    <a href="daftar.php">Daftar</a>
-                </li>
-                <li>
-                    <a href="hasil.php">Hasil</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
+    <?php
+        require 'Header.php';
+    ?>
 
     <main>
         <h1>Daftar Beasiswa</h1>
@@ -41,20 +31,20 @@
                 </p>
                 <p>
                     <label for="phone">Nomor HP</label>
-                    <input type="text" name="phone" id="phone" pattern="[1-9]*" required>
+                    <input type="text" name="phone" id="phone" pattern="[0-9]*" required>
                 </p>
                 <p>
                     <label for="semester">Semester saat ini</label>
                     <select name="semester" id="semester">
                         <option value="" disabled selected>Pilih</option>
-                        <option value="1">Semester 1</option>
-                        <option value="2">Semester 2</option>
-                        <option value="3">Semester 3</option>
-                        <option value="4">Semester 4</option>
-                        <option value="5">Semester 5</option>
-                        <option value="6">Semester 6</option>
-                        <option value="7">Semester 7</option>
-                        <option value="8">Semester 8</option>
+                        <option value=1>Semester 1</option>
+                        <option value=2>Semester 2</option>
+                        <option value=3>Semester 3</option>
+                        <option value=4>Semester 4</option>
+                        <option value=5>Semester 5</option>
+                        <option value=6>Semester 6</option>
+                        <option value=7>Semester 7</option>
+                        <option value=8>Semester 8</option>
                     </select>
                 </p>
                 <p>
@@ -65,14 +55,19 @@
                     <label for="beasiswa">Pilih Beasiswa</label>
                     <select name="beasiswa" id="beasiswa">
                         <option value="" disabled selected>Pilih Beasiswa</option>
-                        <option value="1">Beasiswa 1</option>
-                        <option value="2">Beasiswa 2</option>
-                        <option value="3">Beasiswa 3</option>
-                        <option value="4">Beasiswa 4</option>
-                        <option value="5">Beasiswa 5</option>
-                        <option value="6">Beasiswa 6</option>
-                        <option value="7">Beasiswa 7</option>
-                        <option value="8">Beasiswa 8</option>
+                        <?php
+                            $sql = "SELECT id, nama FROM `beasiswa`";
+                            $result = mysqli_query($con, $sql);
+                            
+                            if ($result) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    $id = $row['id'];
+                                    $nama = $row['nama'];
+                                    
+                                    echo "<option value=$id>$nama</option>";
+                                }
+                            }
+                            ?>
                     </select>
                 </p>
                 <p>
@@ -85,9 +80,9 @@
         </form>
     </main>
 
-    <footer>
-        <p>Copyright &copy; kampuskuaja.ac.id</p>
-    </footer>
+    <?php
+        require 'Footer.php';
+    ?>
 </body>
 
 </html>
